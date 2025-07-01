@@ -10,7 +10,7 @@ O usuário interage com o sistema digitando números inteiros para escolher as o
 
 ## Como o sistema funciona: 🖨
 
-O sistema inicia com um saldo já definido (pode ser alterado no código, atualmente está em R$ 2500.90). A partir disso, ele exibe um menu com 4 opções principais:
+O sistema inicia com um saldo já definido (pode ser alterado no código, atualmente está em R$ 0). A partir disso, ele exibe um menu com 4 opções principais:
 
 1 - Ver saldo
 2 - Depositar
