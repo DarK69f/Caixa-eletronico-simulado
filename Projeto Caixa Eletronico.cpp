@@ -12,7 +12,7 @@ int main(){
 float saldo= 2500.90, valor;
 int opcao;
 
-do{
+do {
 	system("cls");
 	
 	printf("============================================\n");
@@ -23,13 +23,22 @@ do{
 	printf("3 - Sacar\n");
 	printf("4 - Sair\n");
 	printf("============================================\n");	
-	scanf("%d", &opcao);
 	
+	int sucesso = scanf("%d", &opcao);
+	if (sucesso != 1) {
+    printf("? Entrada inválida! Digite apenas números.\n");
+    while (getchar() != '\n');
+    continue;
+	}
+ 
 	switch (opcao) {
 		
 		case 1:
+			printf("============================================\n");
 			printf("Seu saldo é de: R$ %.2f\n", saldo);
+			printf("============================================\n");
 			printf("Pressione ENTER para continuar...\n");
+			printf("============================================\n");
 			getchar(); getchar();
 			break;
 			
@@ -45,8 +54,11 @@ do{
 			
 			saldo += valor;
 			
+			printf("============================================\n");
 			printf("Seu saldo agora é de: R$ %.2f\n", saldo);
+			printf("============================================\n");
 			printf("Pressione ENTER para continuar...\n");
+			printf("============================================\n");
 			getchar(); getchar();
 			break;
 			
@@ -73,8 +85,11 @@ do{
 			}
 		}
 			
+			printf("============================================\n");
 			printf("Seu saldo agora é de: R$ %.2f\n", saldo);
+			printf("============================================\n");
 			printf("Pressione ENTER para continuar...\n");
+			printf("============================================\n");
 			getchar(); getchar();
 			break;
 			
@@ -84,8 +99,11 @@ do{
 			Sleep(250); printf(".");
 			Sleep(250); printf(".\n");
 			break;
+			
+		default:
+			printf("Opção inválida!\n");
+			Sleep(500);
 	}
-	
 	
 } while (opcao = 4);
 
