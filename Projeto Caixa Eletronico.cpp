@@ -9,7 +9,7 @@ int main(){
 	system("color 0B");	
 	setlocale(LC_ALL, "Portuguese_Brazil.1252");
 
-float saldo= 2500.90, valor;
+float saldo= 0, valor;
 int opcao;
 
 do {
