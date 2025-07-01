@@ -4,7 +4,7 @@ O projeto tem o objetivo de simular um caixa eletrônico de forma simplificada, 
 
 ## O que o usuário consegue fazer: 🛠
 
-O usuário interage com o sistema digitando números inteiros para escolher as opções do menu e números racionais (como 100.50) ao depositar ou sacar valores.
+O usuário interage com o sistema digitando números inteiros para escolher as opções do menu e números racionais (como 100,50) ao depositar ou sacar valores. (Obs: ao digitar valores decimais, é recomendado utilizar (,) em vez de (.), pois o programa pode não reconhecer o ponto como separador decimal e acabar considerando uma entrada inválida).
 
 ---
 
